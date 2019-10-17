@@ -1,6 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Willful developer technical test
 
-## Available Scripts
+## Objective
+
+Display a toast notification when you click the "what is react?" button.
+
+This is an example of a toast notification ![](airbnb-toast-notification.png).
+
+## Instructions:
+
+The following criteria should be met:
+
+1. The notification should be styled, similar to the airbnb example with the following specifications:
+
+- The notification should be displayed at the very top of the page.
+- The notification should be full page width.
+- The notification should be approximately 50px in height with 16px of padding.
+- The left chat bubble icon should be replaced with our [Willful icon](src/willful-icon.png).
+- The notification's background color should be our Willful blue `#0064DC`.
+- The message's font color should be white.
+- The message's font size should be 14px
+- The far right `×` font color should also be white.
+
+2. The notification should display the current description of the [React library's Github repository](https://github.com/facebook/react) as the message.
+
+- You can retrieve the Github repository's data by sending a GET request to `https://api.github.com/repos/facebook/react`
+- If you look at the response, the `description` key contains the current description of the repo.
+
+3. Clicking the "what is react?" button should display the notification
+
+- Only one notification should be displayed
+
+4. Clicking the "×" close button should dismiss the notification
+
+- The html/JSX element used for the "×" _should_ be a button
+- After dismissing a notification, clicking the "what is react?" button again should redisplay the notification
+
+## Getting Started:
+
+You can begin the test by extending `src/App.js`
 
 In the project directory, you can run:
 
@@ -12,57 +49,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+## Completing the test
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once complete, please submit your test by emailing a [gist](https://gist.github.com/) of your `App.js` file to mattm@willful.co
 
-### `yarn build`
+## Additional notes:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Your code can be written any way you want, whatever you feel most comfortable with.
+- You are free to use any additional dependencies or libraries if preferred. The only requirement is to use React.
+- For styling: Styled Components was only used as an example, you are free to use any styling solution.
+- `src/App.js` is just a starting point, it can be tweaked, re-wrote completely or scrapped if desired.
+- The page background and button aren't being graded, only styling consideration is the toast notification.
+- No browser requirements, it should work in latest version of Chrome.
+- No accessibility requirements.
+- No bonus points for extending functionality outside the scope of the instructions, we are only looking for a functioning solution that matches the design requirements.

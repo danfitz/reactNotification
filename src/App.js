@@ -1,25 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+
+const Layout = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-color: #e2f6ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Button = styled.button`
+  border: 0;
+  width: 100%;
+  padding: 16px;
+  background-color: #0064dc;
+  color: #fff;
+`;
+
+const url = "https://api.github.com/repos/facebook/react";
 
 function App() {
+  const handleClick = () => {
+    // TODO:
+    // fetch data from url and display repo description in a toast message
+    console.log("click");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Button type="button" onClick={handleClick}>
+        what is react?
+      </Button>
+    </Layout>
   );
 }
 
