@@ -2,26 +2,30 @@
 
 ## Objective
 
-Display a toast notification when you click the "what is react?" button.
+Display a notification when you click the "what is react?" button.
 
-The following is an example of a toast notification that airbnb uses: ![](airbnb-toast-notification.png)
+The following is an example of the finished solution:
+
+![](notification.png)
 
 ## Instructions:
 
-You can begin the test by extending `src/App.js`
+You can begin the test by editing `src/App.js`
 
-The following criteria should be met:
+The following 4 criteria should be met:
 
-### 1. The notification should be styled, similar to the above airbnb example with the following specifications:
+### 1. The notification should be styled with the following specifications:
 
 - The notification should be displayed at the very top of the page.
 - The notification should be full page width.
-- The notification should be approximately 50px in height with 16px of padding.
-- The left chat bubble icon should be replaced with our [Willful icon](src/willful-icon.png).
+- The notification should be 72px in height with 16px of padding.
+- The [Willful icon](src/willful-icon.png) Icon should be 40x40
 - The notification's background color should be our Willful blue `#0064DC`.
 - The message's font color should be white.
 - The message's font size should be 14px
-- The far right `×` font color should also be white.
+- The "×" font color should also be white.
+- The "×" font size should be 30px
+- The Willful Icon, the message, and the "×" should all be vertically centered in the notification.
 
 ### 2. The notification should display the current description of the [React library's Github repository](https://github.com/facebook/react) as the message.
 

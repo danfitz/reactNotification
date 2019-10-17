@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import WillfulLogo from "./willful-icon.png";
+
 const Layout = styled.div`
   width: 100%;
   height: 100vh;
