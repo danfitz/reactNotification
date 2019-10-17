@@ -4,13 +4,15 @@
 
 Display a toast notification when you click the "what is react?" button.
 
-This is an example of a toast notification ![](airbnb-toast-notification.png).
+The following is an example of a toast notification that airbnb uses: ![](airbnb-toast-notification.png)
 
 ## Instructions:
 
+You can begin the test by extending `src/App.js`
+
 The following criteria should be met:
 
-1. The notification should be styled, similar to the airbnb example with the following specifications:
+### 1. The notification should be styled, similar to the above airbnb example with the following specifications:
 
 - The notification should be displayed at the very top of the page.
 - The notification should be full page width.
@@ -21,33 +23,19 @@ The following criteria should be met:
 - The message's font size should be 14px
 - The far right `×` font color should also be white.
 
-2. The notification should display the current description of the [React library's Github repository](https://github.com/facebook/react) as the message.
+### 2. The notification should display the current description of the [React library's Github repository](https://github.com/facebook/react) as the message.
 
 - You can retrieve the Github repository's data by sending a GET request to `https://api.github.com/repos/facebook/react`
 - If you look at the response, the `description` key contains the current description of the repo.
 
-3. Clicking the "what is react?" button should display the notification
+### 3. Clicking the "what is react?" button should display the notification
 
 - Only one notification should be displayed
 
-4. Clicking the "×" close button should dismiss the notification
+### 4. Clicking the "×" close button should dismiss the notification
 
 - The html/JSX element used for the "×" _should_ be a button
 - After dismissing a notification, clicking the "what is react?" button again should redisplay the notification
-
-## Getting Started:
-
-You can begin the test by extending `src/App.js`
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ## Completing the test
 
@@ -63,3 +51,19 @@ Once complete, please submit your test by emailing a [gist](https://gist.github.
 - No browser requirements, it should work in latest version of Chrome.
 - No accessibility requirements.
 - No bonus points for extending functionality outside the scope of the instructions, we are only looking for a functioning solution that matches the design requirements.
+
+## Getting Started:
+
+Install dependencies:
+
+### `yarn install`
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
