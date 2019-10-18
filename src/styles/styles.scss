@@ -1,0 +1,81 @@
+// Tools import
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/typography";
+
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: #e2f6ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Shared CSS properties for "what is react?" and notification banner
+.banner {
+  width: 100%;
+  padding: 16px;
+}
+
+// Styling for notification
+.notification {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $willfulBlue;
+  color: white;
+  position: absolute;
+  top: 0;
+
+  .willfulLogo {
+    width: 40px;
+  }
+
+  .notificationMessage {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 20px;
+  }
+
+  .closeNotification {
+    font-size: 20px; // I know you said 30px, but 20px looks more like your screenshot sample!
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2.5px;
+      left: 10%;
+      width: 0%;
+      height: 0;
+      border-radius: 5px;
+      background-color: white;
+      transition: width 0.5s;
+    }
+
+    &:focus,
+    &:hover {
+      &::after {
+        width: 80%;
+        height: 2px;
+      }
+    }
+  }
+}
+
+// Styling for "what is react? button
+.openNotification {
+  &:hover {
+    border: 2.5px solid $willfulBlue;
+    color: $willfulBlue;
+    background-color: white;
+  }
+
+  &:focus {
+    border: 1.5px dotted;
+  }
+}

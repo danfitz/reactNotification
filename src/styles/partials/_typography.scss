@@ -1,0 +1,15 @@
+// Font and button styling
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: $primaryFont;
+};
+
+button {
+  font-family: $primaryFont;
+  font-weight: 700;
+  border: 0;
+  background: $willfulBlue;
+  color: #fff;
+}
